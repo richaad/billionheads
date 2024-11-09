@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --gold-gradient: linear-gradient(to bottom, #FFD700, #B8860B);
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: black;
+  overflow-x: hidden;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.logo-text {
+  background: var(--gold-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.3));
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+@font-face {
+  font-family: 'avenir';
+  src: url('/font/AvenirNextLTPro-Bold.otf');
+ }
+
+ .logo-text {
+  font-family: 'avenir';
+ }
