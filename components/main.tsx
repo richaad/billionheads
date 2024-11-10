@@ -64,8 +64,10 @@ function Main() {
             </div>
           </div>
         </div>
-        <div className=" w-[23rem] flex items-center justify-center  overflow-hidden  ">
-          {/* <Image src="/design/pop1.gif" width={550} height={550} alt="" /> */}
+        <div className="relative flex flex-col justify-center items-center bg-gradient-to-br from-[#ba9d44] via-[#FFA500] to-[#DAA520] rounded-t-full p-[3px] shadow-lg shadow-orange-500/50 glow-orange">
+          <div className="h-full w-full bg-black rounded-t-full flex justify-center items-center overflow-hidden">
+            <video src="/assets/intro.MOV" autoPlay loop  className="w-[20rem] filter brightness-75"></video>
+          </div>
         </div>
       </div>
     </main>
