@@ -2,7 +2,7 @@ import React from "react";
 
 import { Jost } from "next/font/google";
 import { Poppins } from "next/font/google";
-import Image from "next/image";
+
 
 const jost = Jost({
   weight: "300",
@@ -39,7 +39,7 @@ function Main() {
             <p
               className={` ${poppins.className} text-lg bg-[#E89100] text-black inline-block text-center font-bold w-[380px] px-4 py-1 rounded-2xl`}
             >
-              "WHERE EVERY HEAD COUNTS"
+              &ldquo;WHERE EVERY HEAD COUNTS&ldquo;
             </p>
           </div>
           <div className="space-y-2 w-[23.9rem]">
