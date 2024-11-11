@@ -1,7 +1,14 @@
 /** @type {import('next').NextConfig} */
 const path = require('path');
+
+
+const isProd = process.env.NODE_ENV === "production";
+
 const nextConfig = {
+  assetPrefix: isProd ? "/billionheads/" : "",
   images: {
+    loader: "imgix",
+    path: isProd ? "https://richaad.github.io/billionheads/" : "",
     unoptimized: true,
     remotePatterns: [
       {
